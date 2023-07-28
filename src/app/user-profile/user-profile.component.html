@@ -1,0 +1,20 @@
+<!--
+<div>
+    <div> {{user.photo}} </div>
+    <input type="text" [value]="user.quote">
+
+    <div [hidden]="!isPartVisible">
+        <p> {{user.age}} </p>
+    </div>
+    <p> {{user.name}} {{user.firstName}} </p>
+    <button (click)="hideAge()">Hide Age</button>
+</div>>
+-->
+
+<img src= {{user.photo}}>
+<p> Name: {{user.name}}</p>
+<p> First Name: {{user.firstName}} </p>
+<input type="text" [(ngModel)]="user.quote">
+<p> Quote: {{user.quote}} </p>
+<p [hidden]="isAgeHidden"> Age: {{user.age}} </p>
+<button (click)="hideAge()">Hide Age?</button>
